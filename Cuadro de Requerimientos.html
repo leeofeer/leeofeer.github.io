@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cuadro de Requerimientos - Analisis de Sistemas</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div>
+
+	<h1>Analisis de Requerimientos - Modulo Compras</h1>
+
+	<table class="table table-responsive table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Evento</th>
+				<th>Requerimiento</th>
+				<th>Respuesta</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>El encargado de almacen registra pedido de compra de acuerdo a la existencia de los insumos.</td>
+				<td>Registrar pedido de compras.</td>
+				<td>Pedido de compra registrado.</td>
+			</tr>
+			<tr>
+				<td>El encargado de compras recibe el pedido y genera orden de compra de acuerdo al pedido para enviarselo a/los proveedores correspondientes. Almacena una copia para controles.</td>
+				<td>Generar/registrar una orden de compra.</td>
+				<td>Orden de compra generada y registrada.</td>
+			</tr>
+
+			<tr>
+				<td>Encargado de compras solicita presupuesto a proveedores nuevos de acuerdo al pedido o a su criterio. Registra los presupuestos que le envia el provedor.</td>
+				<td>Registrar presupuesto.</td>
+				<td>Presupuesto registrado.</td>
+			</tr>
+
+			<tr>
+				<td>El encargado de compras archiva las facturas de compras por fecha y numero de facturas y anota en planilla las cuentas a pagar.	</td>
+				<td>Registrar facturas y generar cuentas a pagar.</td>
+				<td>Factura registrada y cuenta a pagar generada.</td>
+			</tr>
+
+			<tr>
+				<td>El encargado de almacen anota en su planilla la nueva cantidad de insumos ingresado en almacen, luego lo suma con la existencias para realizar el ajuste de existencias.</td>
+				<td>Registrar ajustes de stock.</td>
+				<td>Ajuste de stock registrado.</td>
+			</tr>
+
+			<tr>
+				<td>El encargado de compras envía las mercaderías dañadas o vencidas al proveedor con las facturas de compra. Registra la nota de crédito enviada por el proveedor.</td>
+				<td>Registrar nota de crédito.</td>
+				<td>Nota de crédito registrada.</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h2>Alcance del Sistema - Modulo Compras</h2>
+
+	<ul class="list-group list-group-flush">
+  		<li class="list-group-item">1. Registrar pedidos.</li>
+  		<li class="list-group-item">2. Registrar presupuesto de proveedor.</li>
+  		<li class="list-group-item">3. Generar y registrar orden de compras.</li>
+  		<li class="list-group-item">4. Registrar facturas de compras, generar cuentas a pagar.</li>
+  		<li class="list-group-item">5. Registrar ajustes de inventario.</li>
+  		<li class="list-group-item">6. Registrar notas de crédito de las compras.</li>
+  		<li class="list-group-item">7. Generar informes varios de compras</li>
+
+	</ul>
+
+</div>
+
+<div>
+
+	<h1>Analisis de Requerimientos - Modulo Ventas</h1>
+
+	<table class="table table-responsive table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Evento</th>
+				<th>Requerimiento</th>
+				<th>Respuesta</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>El encargado de ventas registra los pedidos.</td>	
+				<td>Registra pedido de venta.</td>	
+				<td>Pedido de venta registrado.</td>
+			</tr>
+
+			<tr>
+				<td>El encargado de ventas elabora la factura de acuerdo al peiddo del cliente y registra copia.</td>	
+				<td>Generar/registrar Factura Venta.</td>	
+				<td>Factura de venta generada/registrada.</td>
+			</tr>
+
+			<tr>
+				<td>El encargado de ventas registra los cobros de las facturas.</td>	
+				<td>Registra cobros.</td>	
+				<td>Cobros registrados.</td>
+			</tr>
+
+			<tr>
+				<td>El encargado de ventas emite nota credito de acuerdo a la factura y guarda copia.</td>	
+				<td>Generar/Registrar nota credito.</td>	
+				<td>Nota credito generada/registrada.</td>
+			</tr>
+
+			<tr>
+				<td>El encargado de ventas abre la caja con fondo fijo y registra la fecha y el monto.</td>	
+				<td>Registra apertura caja.</td>
+				<td>Apertura caja registrada.</td>
+			</tr>
+
+			<tr>
+				<td>El encargado de ventas suma los cobros del dia y lo registra en la planilla de recaudaciones al cerrar la caja junto con la fecha y hora.</td>
+
+				<td>Registrar cierre de caja.
+				Generar Recaudación.</td>
+
+				<td>Cierre caja registrado.
+				Recaudacion Generada.</td>
+			</tr>
+
+			<tr>
+				<td>Encargado ventas genera presupuesto de acuerdo a los precios del dia con validez limitada. Entrega al cliente y guarda copia.</td>
+				<td>Generar/Registrar Presupuesto.</td>	
+				<td>Presupuesto generado/registrado.</td>
+			</tr>
+
+		</tbody>
+	</table>
+
+	<h2>Alcance del Sistema - Modulo Ventas</h2>
+
+	<ul class="list-group list-group-flush">
+  		<li class="list-group-item">1. Registrar Pedidos.</li>
+  		<li class="list-group-item">2. Generar/registrar Factura venta.</li>
+  		<li class="list-group-item">3. Registrar Cobros.</li>
+  		<li class="list-group-item">4. Generar/Registrar Nota Crédito.</li>
+  		<li class="list-group-item">5. Registrar apertura caja.</li>
+  		<li class="list-group-item">6. Registrar cierre caja y generar recaudación.</li>
+  		<li class="list-group-item">7. Generar/Registrar Presupuesto.</li>
+  		<li class="list-group-item">8. Generar Informes Varios.</li>
+
+	</ul>
+
+</div>
+
+<div>
+
+	<h1>Analisis de Requerimientos - Modulo Produccion</h1>
+
+	<table class="table table-responsive table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Evento</th>
+				<th>Requerimiento</th>
+				<th>Respuesta</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>Encargado producción recibe los pedidos de venta y rellena el formulario de orden de trabajo de acuerdo al pedido. Envia la orden a las cocinas.</td>	
+				<td>Registrar orden producción.</td>	
+				<td>Orden produccion registrada.</td>
+			</tr>
+
+			<tr>
+				<td>En las cocinas se procede a producir la orden. Una vez finalizados se registran en planilla la produccion con los datos requeridos para la misma.</td>	
+				<td>Registrar producción.</td>	
+				<td>Produccion registrada.</td>
+			</tr>
+
+			<tr>
+				<td>El encargado de produccion calcula el costo de cada producot teniendo en cuenta la proporcion de los insumos utilizados para cada producto, asi como la mano de obra invertida y otros gastos indirectos.</td>	
+				<td>Generar costo de produccion.</td>	
+				<td>Costo produccion generado.</td>
+			</tr>
+
+			<tr>
+				<td>El encargado de produccion elabora las recetas de acuerdo a su criterio, los anota y pone a disposicion de los cocineros.</td>
+				<td>Registrar recetas.</td>	
+				<td>Recetas registradas.</td>
+			</tr>
+
+			<tr>
+				<td>El encargado de las cocinas registra las mermas que puedan haber en la produccion.</td>	
+				<td>Registrar mermas.</td>	
+				<td>Mermas registradas.</td>
+			</tr>
+
+			<tr>
+				<td>El encargado de produccion registra la calidad de los productos trerminados.</td> 	
+				<td>Registrar control calidad.</td>	
+				<td>Control calidad registrado.</td>
+			</tr>
+
+			<tr>
+				<td>El encargado de produccion solicita insumos del almacen para ser usados en la produccion mediante una nota de pedido de materia prima.</td>
+				<td>Registrar pedido de materia prima.</td>
+				<td>Pedido de materia prima registrada.</td>
+			</tr>
+
+		</tbody>
+	</table>
+
+	<h2>Alcance del Sistema - Modulo Produccion</h2>
+
+	<ul class="list-group list-group-flush">
+  		<li class="list-group-item">1. Registrar producción.</li>
+  		<li class="list-group-item">2. Registrar orden produccion.</li>
+  		<li class="list-group-item">3. Generar costo de produccion.</li>
+  		<li class="list-group-item">4. Registrar recetas.</li>
+  		<li class="list-group-item">5. Registrar mermas.</li>
+  		<li class="list-group-item">6. Registrar control calidad.</li>
+  		<li class="list-group-item">7. Registrar nota de pedido de insumos.</li>
+  		<li class="list-group-item">8. Elaborar informes.</li>
+
+	</ul>
+
+</div>
+
+</body>
+</html>
